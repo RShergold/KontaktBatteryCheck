@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960C26081A35CF9100E8722C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C26071A35CF9100E8722C /* AppDelegate.swift */; };
+		960C260A1A35CF9100E8722C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C26091A35CF9100E8722C /* ViewController.swift */; };
+		960C260D1A35CF9100E8722C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960C260B1A35CF9100E8722C /* Main.storyboard */; };
+		960C260F1A35CF9100E8722C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960C260E1A35CF9100E8722C /* Images.xcassets */; };
+		960C26121A35CF9100E8722C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960C26101A35CF9100E8722C /* LaunchScreen.xib */; };
+		960C261E1A35CF9200E8722C /* KontaktBatteryCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C261D1A35CF9200E8722C /* KontaktBatteryCheckTests.swift */; };
+		960C26281A35CFAC00E8722C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960C26271A35CFAC00E8722C /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		960C26181A35CF9200E8722C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960C25FA1A35CF9100E8722C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960C26011A35CF9100E8722C;
+			remoteInfo = KontaktBatteryCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		960C26021A35CF9100E8722C /* KontaktBatteryCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KontaktBatteryCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		960C26061A35CF9100E8722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960C26071A35CF9100E8722C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		960C26091A35CF9100E8722C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		960C260C1A35CF9100E8722C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		960C260E1A35CF9100E8722C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		960C26111A35CF9100E8722C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		960C26171A35CF9200E8722C /* KontaktBatteryCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KontaktBatteryCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		960C261C1A35CF9200E8722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960C261D1A35CF9200E8722C /* KontaktBatteryCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktBatteryCheckTests.swift; sourceTree = "<group>"; };
+		960C26271A35CFAC00E8722C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960C25FF1A35CF9100E8722C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960C26281A35CFAC00E8722C /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960C26141A35CF9200E8722C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960C25F91A35CF9100E8722C = {
+			isa = PBXGroup;
+			children = (
+				960C26271A35CFAC00E8722C /* CoreBluetooth.framework */,
+				960C26041A35CF9100E8722C /* KontaktBatteryCheck */,
+				960C261A1A35CF9200E8722C /* KontaktBatteryCheckTests */,
+				960C26031A35CF9100E8722C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		960C26031A35CF9100E8722C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960C26021A35CF9100E8722C /* KontaktBatteryCheck.app */,
+				960C26171A35CF9200E8722C /* KontaktBatteryCheckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960C26041A35CF9100E8722C /* KontaktBatteryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				960C26071A35CF9100E8722C /* AppDelegate.swift */,
+				960C26091A35CF9100E8722C /* ViewController.swift */,
+				960C260B1A35CF9100E8722C /* Main.storyboard */,
+				960C260E1A35CF9100E8722C /* Images.xcassets */,
+				960C26101A35CF9100E8722C /* LaunchScreen.xib */,
+				960C26051A35CF9100E8722C /* Supporting Files */,
+			);
+			path = KontaktBatteryCheck;
+			sourceTree = "<group>";
+		};
+		960C26051A35CF9100E8722C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				960C26061A35CF9100E8722C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		960C261A1A35CF9200E8722C /* KontaktBatteryCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				960C261D1A35CF9200E8722C /* KontaktBatteryCheckTests.swift */,
+				960C261B1A35CF9200E8722C /* Supporting Files */,
+			);
+			path = KontaktBatteryCheckTests;
+			sourceTree = "<group>";
+		};
+		960C261B1A35CF9200E8722C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				960C261C1A35CF9200E8722C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960C26011A35CF9100E8722C /* KontaktBatteryCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960C26211A35CF9200E8722C /* Build configuration list for PBXNativeTarget "KontaktBatteryCheck" */;
+			buildPhases = (
+				960C25FE1A35CF9100E8722C /* Sources */,
+				960C25FF1A35CF9100E8722C /* Frameworks */,
+				960C26001A35CF9100E8722C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KontaktBatteryCheck;
+			productName = KontaktBatteryCheck;
+			productReference = 960C26021A35CF9100E8722C /* KontaktBatteryCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		960C26161A35CF9200E8722C /* KontaktBatteryCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960C26241A35CF9200E8722C /* Build configuration list for PBXNativeTarget "KontaktBatteryCheckTests" */;
+			buildPhases = (
+				960C26131A35CF9200E8722C /* Sources */,
+				960C26141A35CF9200E8722C /* Frameworks */,
+				960C26151A35CF9200E8722C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960C26191A35CF9200E8722C /* PBXTargetDependency */,
+			);
+			name = KontaktBatteryCheckTests;
+			productName = KontaktBatteryCheckTests;
+			productReference = 960C26171A35CF9200E8722C /* KontaktBatteryCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960C25FA1A35CF9100E8722C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Hatch;
+				TargetAttributes = {
+					960C26011A35CF9100E8722C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					960C26161A35CF9200E8722C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 960C26011A35CF9100E8722C;
+					};
+				};
+			};
+			buildConfigurationList = 960C25FD1A35CF9100E8722C /* Build configuration list for PBXProject "KontaktBatteryCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 960C25F91A35CF9100E8722C;
+			productRefGroup = 960C26031A35CF9100E8722C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960C26011A35CF9100E8722C /* KontaktBatteryCheck */,
+				960C26161A35CF9200E8722C /* KontaktBatteryCheckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960C26001A35CF9100E8722C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960C260D1A35CF9100E8722C /* Main.storyboard in Resources */,
+				960C26121A35CF9100E8722C /* LaunchScreen.xib in Resources */,
+				960C260F1A35CF9100E8722C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960C26151A35CF9200E8722C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960C25FE1A35CF9100E8722C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960C260A1A35CF9100E8722C /* ViewController.swift in Sources */,
+				960C26081A35CF9100E8722C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960C26131A35CF9200E8722C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960C261E1A35CF9200E8722C /* KontaktBatteryCheckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		960C26191A35CF9200E8722C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960C26011A35CF9100E8722C /* KontaktBatteryCheck */;
+			targetProxy = 960C26181A35CF9200E8722C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		960C260B1A35CF9100E8722C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960C260C1A35CF9100E8722C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		960C26101A35CF9100E8722C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960C26111A35CF9100E8722C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		960C261F1A35CF9200E8722C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		960C26201A35CF9200E8722C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960C26221A35CF9200E8722C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KontaktBatteryCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		960C26231A35CF9200E8722C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KontaktBatteryCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		960C26251A35CF9200E8722C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KontaktBatteryCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KontaktBatteryCheck.app/KontaktBatteryCheck";
+			};
+			name = Debug;
+		};
+		960C26261A35CF9200E8722C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KontaktBatteryCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KontaktBatteryCheck.app/KontaktBatteryCheck";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		960C25FD1A35CF9100E8722C /* Build configuration list for PBXProject "KontaktBatteryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960C261F1A35CF9200E8722C /* Debug */,
+				960C26201A35CF9200E8722C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960C26211A35CF9200E8722C /* Build configuration list for PBXNativeTarget "KontaktBatteryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960C26221A35CF9200E8722C /* Debug */,
+				960C26231A35CF9200E8722C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960C26241A35CF9200E8722C /* Build configuration list for PBXNativeTarget "KontaktBatteryCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960C26251A35CF9200E8722C /* Debug */,
+				960C26261A35CF9200E8722C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960C25FA1A35CF9100E8722C /* Project object */;
+}
