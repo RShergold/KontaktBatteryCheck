@@ -43,26 +43,19 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UITableViewDel
     
     
     func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI rssi: NSNumber!) {
+      
+      if peripheral.name != "Kontakt" { return }
+      let serviceData = advertisementData[ CBAdvertisementDataServiceDataKey ] as! Dictionary<CBUUID, NSData>
+      if let nameAndPower = serviceData[ CBUUID(string:"D00D") ] {
+      
+        let name = NSString(data: nameAndPower.subdataWithRange(NSMakeRange(0, 4)), encoding: NSASCIIStringEncoding)!
+        var power: Int = 0;
+        nameAndPower.getBytes(&power, range: NSMakeRange(6, 1))
         
-        
-        if peripheral.name? == "Kontakt" {
-            if let serviceData = advertisementData[ CBAdvertisementDataServiceDataKey ] as? Dictionary<CBUUID, NSData> {
-                if let nameAndPower = serviceData[ CBUUID(string:"D00D") ] {
-                    
-                    let name = NSString(data: nameAndPower.subdataWithRange(NSMakeRange(0, 4)), encoding: NSASCIIStringEncoding)!
-                    
-                    var power: Int = 0;
-                    nameAndPower.getBytes(&power, range: NSMakeRange(6, 1))
-                    
-                    println( "\(nameAndPower) - \(name) \(power)%" )
-                    beacons.append( beacon(name: name, rssi: rssi, power: power) )
-                    
-                    refreshTableView()
-                    
-                }
-            }
-        }
-        
+        println( "\(name) \(power)%" )
+        beacons.append( beacon(name: name, rssi: rssi, power: power) )
+        refreshTableView()
+      }
     }
     
     func refreshTableView() {
@@ -81,18 +74,18 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UITableViewDel
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("beaconCell", forIndexPath: indexPath) as UITableViewCell //1
+        let cell = tableView.dequeueReusableCellWithIdentifier("beaconCell", forIndexPath: indexPath) as! UITableViewCell
 
-        if let nameLabel = cell.viewWithTag(1) as? UILabel { //3
-            nameLabel.text = beacons[indexPath.row].name
+        if let nameLabel = cell.viewWithTag(1) as? UILabel {
+            nameLabel.text = beacons[indexPath.row].name as String
         }
         
-        if let rssiLabel = cell.viewWithTag(2) as? UILabel { //3
+        if let rssiLabel = cell.viewWithTag(2) as? UILabel {
             rssiLabel.text = "rssi: \(beacons[indexPath.row].rssi)"
         }
         
         
-        if let powerLabel = cell.viewWithTag(3) as? UILabel { //3
+        if let powerLabel = cell.viewWithTag(3) as? UILabel { 
             powerLabel.text = "\(beacons[indexPath.row].power)%"
         }
 
