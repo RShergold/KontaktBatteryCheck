@@ -31,29 +31,28 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UITableViewDel
         
     }
 
-    func centralManagerDidUpdateState(central: CBCentralManager!) {
+    func centralManagerDidUpdateState(central: CBCentralManager) {
         
-        println("did update state")
+        print("did update state")
         
         if central.state == CBCentralManagerState.PoweredOn {
             self.centralManager.scanForPeripheralsWithServices(nil, options: nil)
         }
         
     }
-    
-    
-    func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI rssi: NSNumber!) {
+  
+    func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
       
       if peripheral.name != "Kontakt" { return }
       let serviceData = advertisementData[ CBAdvertisementDataServiceDataKey ] as! Dictionary<CBUUID, NSData>
       if let nameAndPower = serviceData[ CBUUID(string:"D00D") ] {
-      
+        
         let name = NSString(data: nameAndPower.subdataWithRange(NSMakeRange(0, 4)), encoding: NSASCIIStringEncoding)!
         var power: Int = 0;
         nameAndPower.getBytes(&power, range: NSMakeRange(6, 1))
         
-        println( "\(name) \(power)%" )
-        beacons.append( beacon(name: name, rssi: rssi, power: power) )
+        print( "\(name) \(power)%" )
+        beacons.append( beacon(name: name, rssi: RSSI, power: power) )
         refreshTableView()
       }
     }
@@ -61,7 +60,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UITableViewDel
     func refreshTableView() {
         
         activityIndicator.stopAnimating()
-        beacons.sort { (lhs, rhs) in return lhs.rssi.integerValue > rhs.rssi.integerValue }
+        beacons.sortInPlace { (lhs, rhs) in return lhs.rssi.integerValue > rhs.rssi.integerValue }
         tableView.reloadData()
         
     }
@@ -74,7 +73,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UITableViewDel
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("beaconCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("beaconCell", forIndexPath: indexPath)
 
         if let nameLabel = cell.viewWithTag(1) as? UILabel {
             nameLabel.text = beacons[indexPath.row].name as String

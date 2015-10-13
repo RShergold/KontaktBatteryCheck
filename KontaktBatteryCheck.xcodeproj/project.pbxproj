@@ -160,6 +160,7 @@
 		960C25FA1A35CF9100E8722C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Hatch;
 				TargetAttributes = {
