@@ -1,6 +1,6 @@
 # Depreciated
 
-This is a pretty old example. Swift has, of corse, changed. Take a look at this more modern implimentation instead
+This is a pretty old example. Swift has, of course, changed. Take a look at this more modern implimentation instead
 
 https://github.com/mopius/ble-battery-status-ios
 
